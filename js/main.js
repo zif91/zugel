@@ -11,6 +11,15 @@ $(function () {
     $('.overlay').toggleClass('show');
   });
 
+  $('.header-compare').hover(
+    function () {
+      $('.header-compare-popup').addClass('visible');
+    },
+    function () {
+      $('.header-compare-popup').removeClass('visible');
+    }
+  );
+
   $('.overlay').on('click', function () {
     $('.overlay').removeClass('show');
     $('.header-search').removeClass('active');
